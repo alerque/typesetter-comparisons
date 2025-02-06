@@ -1,0 +1,9 @@
+\begin{document}
+\use[module=packages.math]
+\set[parameter=math.font.family,value=Libertinus Math]
+
+\begin[mode=display]{math}
+  \sum_{k=0}^\infty \int_{0}^\infty e^{-kx^2}\,\mo{d}x
+\end{math}
+
+\end{document}

@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[paperheight=105mm,paperwidth=74mm,margin=4mm]{geometry}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\usepackage{libertinus}
+\usepackage{fontspec}
+\usepackage{relsize}
+\usepackage{unicode-math}
+\usepackage{siunitx}
+\begin{document}
+\fontsize{12}{16}
+\selectfont
+
+Math mode manners:
+\setmathfont{STIX Two Math}
+\[\mathlarger{\begin{aligned}
+	f(x) & = a\prime + b\dprime + c\trprime \\
+	f\prime(x) & = x^{2} + 1
+\end{aligned}}\]
+
+\setmathfont{Libertinus Math}
+\[\mathlarger{\begin{aligned}
+	f(x) & = a\prime + b\dprime + c\trprime \\
+	f\prime(x) & = x^{2} + 1
+\end{aligned}}\]
+
+Prose poses problems:
+\smallskip
+
+\raggedright{
+	60*10'16"N 24*55'52"E (plain)\break
+	60°10′16″N 24°55′52″E (unicode)\break
+	\ang{60;10;16}N \ang{24;55;52}E (idiomatic)
+}
+
+\end{document}

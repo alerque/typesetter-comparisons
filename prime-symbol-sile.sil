@@ -1,0 +1,35 @@
+\begin[papersize=a7]{document}
+\nofolios
+\neverindent
+\font[family=Libertinus Serif,size=12pt]
+\use[module=packages.math]
+\set[parameter=math.font.size,value=16]
+
+Math mode manners:
+
+\set[parameter=math.font.family,value=STIX Two Math]
+\begin[mode=display]{math}
+	\table[columnalign=right left]{
+		f(x) &= a\prime  + b\dprime + c\trprime \\
+		f\prime(x) &= x^2 + 1
+	}
+\end{math}
+
+\set[parameter=math.font.family,value=Libertinus Math]
+\begin[mode=display]{math}
+	\table[columnalign=right left]{
+		f(x) &= a\prime  + b\dprime + c\trprime \\
+		f\prime(x) &= x^2 + 1
+	}
+\end{math}
+
+Prose poses problems:
+\medskip
+
+\begin{raggedright}
+	60*10'16"N 24*55'52"E (plain)\break
+	60°10′16″N 24°55′52″E (unicode)\break
+	60°10′16″N 24°55′52″E (idiomatic)
+\end{raggedright}
+
+\end{document}

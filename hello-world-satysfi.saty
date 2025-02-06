@@ -1,0 +1,8 @@
+@require: stdjareport
+
+document(|
+	title = {};
+	author = {};
+|) '<
+	+p{Hello World}
+>

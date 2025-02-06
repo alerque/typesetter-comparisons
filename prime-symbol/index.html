@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Polytype – The Prime Symbol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+    
+  </head>
+  <body>
+    <!--
+    <pre>{
+  "config": {
+    "base_url": "/",
+    "mode": "build",
+    "title": "Polytype",
+    "description": "a Rosetta stone for typesetting engines",
+    "languages": {},
+    "default_language": "en",
+    "generate_feed": true,
+    "generate_feeds": true,
+    "feed_filenames": [
+      "feed.xml"
+    ],
+    "taxonomies": [],
+    "author": null,
+    "build_search_index": false,
+    "extra": {},
+    "markdown": {
+      "highlight_code": true,
+      "highlight_theme": "base16-ocean-dark",
+      "highlight_themes_css": [],
+      "render_emoji": false,
+      "external_links_target_blank": false,
+      "external_links_no_follow": false,
+      "external_links_no_referrer": false,
+      "smart_punctuation": false,
+      "bottom_footnotes": false,
+      "extra_syntaxes_and_themes": [],
+      "lazy_async_image": false
+    },
+    "search": {
+      "index_format": "elasticlunr_javascript"
+    },
+    "generate_sitemap": true,
+    "generate_robots_txt": true
+  },
+  "current_path": "/prime-symbol/",
+  "current_url": "/prime-symbol/",
+  "lang": "en",
+  "page": {
+    "relative_path": "prime-symbol.md",
+    "colocated_path": null,
+    "content": "<p>Assorted ways of entering and rendering the troublesome prime symbol.</p>\n<p>One issue is in math mode.\nA typesetter has to account for how different fonts position their prime symbols.</p>\n<p>Another problem crops up in text where quotes marks get used for things like feet and inch units in lengths or minute and second units in latitude and longitude coordinates.\nIt should be possible to <em>not</em> trigger smart quotes in these cases.</p>\n",
+    "permalink": "/prime-symbol/",
+    "slug": "prime-symbol",
+    "ancestors": [
+      "_index.md"
+    ],
+    "title": "The Prime Symbol",
+    "description": "In math mode, prime-time is always a good time.",
+    "updated": null,
+    "date": null,
+    "year": null,
+    "month": null,
+    "day": null,
+    "taxonomies": {},
+    "authors": [],
+    "extra": {
+      "typesetters": [
+        "typst",
+        "sile",
+        "xelatex",
+        "groff"
+      ],
+      "typesetter_args": {
+        "groff": "-e -P-pA7"
+      }
+    },
+    "path": "/prime-symbol/",
+    "components": [
+      "prime-symbol"
+    ],
+    "summary": null,
+    "toc": [],
+    "word_count": 71,
+    "reading_time": 1,
+    "assets": [],
+    "draft": false,
+    "lang": "en",
+    "lower": null,
+    "higher": null,
+    "translations": [],
+    "backlinks": []
+  }
+}</pre>
+    -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <h1 class="title is-1 navbar-brand"><a href="&#x2F;">Polytype</a></h1>
+    </nav>
+    <section class="section columns">
+      <aside class="menu column is-narrow">
+        
+
+
+<aside class="menu">
+  <p class="menu-label">
+    Sample Gallery
+  </p>
+  <ul class="menu-list">
+    
+    
+    <li>
+      <a href="/page-geometry">Page Geometry 101</a>
+    </li>
+    
+    <li class="is-active">
+      <a href="/prime-symbol">The Prime Symbol</a>
+    </li>
+    
+    <li>
+      <a href="/dropcaps">Dropcaps</a>
+    </li>
+    
+    <li>
+      <a href="/integral-alignment">Alignment of Integrals</a>
+    </li>
+    
+    <li>
+      <a href="/hieroglyphs">Hieroglyphs</a>
+    </li>
+    
+    <li>
+      <a href="/hello-world">Hello World!</a>
+    </li>
+    
+    <li>
+      <a href="/varlimits">Variant limits</a>
+    </li>
+    
+  </ul>
+  <p class="menu-label">
+    About
+  </p>
+  <ul class="menu-list">
+    <li>
+      <a href="/">Project Goals</a>
+    </li>
+    <li>
+      <a href="https://github.com/alerque/polytype">Sources on GitHub</a>
+    </li>
+  </ul>
+  <p class="menu-label">
+    Typesetting Engines
+  </p>
+  <ul class="menu-list">
+    <li>
+      <a href="https://sile-typesetter.org">SILE</a>
+    </li>
+    <li>
+      <a href="https://typst.app">Typst</a>
+    </li>
+    <li>
+      <a href="https://www.latex-project.org">LaTeX</a>
+    </li>
+    <li>
+      <a href="https://pagedjs.org">paged.js</a>
+    </li>
+    <li>
+      <a href="https://weasyprint.org">WeasyPrint</a>
+    </li>
+    <li>
+      <a href="https://www.speedata.de">Speedata</a>
+    </li>
+    <li>
+      <a href="https://www.gnu.org/software/groff/groff.html">groff</a>
+    </li>
+    <li>
+      <a href="https://patoline.github.io/">Patoline</a>
+    </li>
+    <li>
+      <a href="https://github.com/gfngfn/SATySFi">SATySFi</a>
+    </li>
+  </ul>
+</aside>
+
+      </aside>
+      <div class="container column">
+        
+
+<h2 class="title is-2">The Prime Symbol</h2>
+
+<p>Assorted ways of entering and rendering the troublesome prime symbol.</p>
+<p>One issue is in math mode.
+A typesetter has to account for how different fonts position their prime symbols.</p>
+<p>Another problem crops up in text where quotes marks get used for things like feet and inch units in lengths or minute and second units in latitude and longitude coordinates.
+It should be possible to <em>not</em> trigger smart quotes in these cases.</p>
+
+
+
+
+
+<a id="typst" /></a>
+
+<h3 class="title is-3">typst</h3>
+
+<div class="columns">
+  <div class="card column is-one-third">
+    <div class="card-image">
+      <img src="/prime-symbol-typst.avif" />
+    </div>
+  </div>
+  <div class="column">
+
+    <p>
+      Download:
+      ( <a download href="/prime-symbol-typst.typ">source</a>
+      | <a download href="/prime-symbol-typst.pdf">pdf</a>
+      )
+    </p>
+
+    <h4 class="title is-4">Input document</h4>
+    
+    <pre>#set page(
+  paper: &quot;a7&quot;,
+  margin: 4mm,
+)
+#set text(
+    font: &quot;Libertinus Serif&quot;,
+    size: 12pt,
+)
+#show par: set block(spacing: 1em)
+#show math.equation: set block(spacing: .8em)
+#show math.equation: set par(leading: .4em)
+
+Math mode manners:
+
+#[
+    #show math.equation: set text(font: &quot;STIX Two Math&quot;, size: 16pt)
+    $
+        f(x) &amp;= a&#x27; + b&#x27;&#x27; + c&#x27;&#x27;&#x27; \
+        f&#x27;(x) &amp;= x^2 + 1
+    $
+]
+
+#[
+    #show math.equation: set text(font: &quot;Libertinus Math&quot;, size: 16pt)
+    $
+        f(x) &amp;= a&#x27; + b&#x27;&#x27; + c&#x27;&#x27;&#x27; \
+        f&#x27;(x) &amp;= x^2 + 1
+    $
+]
+
+Prose poses problems:
+
+60*10&#x27;16&quot;N 24*55&#x27;52&quot;E (plain)\
+60°10′16″N 24°55′52″E (unicode)\
+60#[#sym.degree]10#[#sym.prime]16#[#sym.prime.double]N 24#[#sym.degree]55#[#sym.prime]52#[#sym.prime.double]E (idiomatic)\
+</pre>
+
+    <h4 class="title is-4">Render command</h4>
+    <code>typst  compile prime-symbol-typst.typ prime-symbol-typst.pdf</code>
+  </div>
+</div>
+
+
+
+
+<a id="sile" /></a>
+
+<h3 class="title is-3">sile</h3>
+
+<div class="columns">
+  <div class="card column is-one-third">
+    <div class="card-image">
+      <img src="/prime-symbol-sile.avif" />
+    </div>
+  </div>
+  <div class="column">
+
+    <p>
+      Download:
+      ( <a download href="/prime-symbol-sile.sil">source</a>
+      | <a download href="/prime-symbol-sile.pdf">pdf</a>
+      )
+    </p>
+
+    <h4 class="title is-4">Input document</h4>
+    
+    <pre>\begin[papersize=a7]{document}
+\nofolios
+\neverindent
+\font[family=Libertinus Serif,size=12pt]
+\use[module=packages.math]
+\set[parameter=math.font.size,value=16]
+
+Math mode manners:
+
+\set[parameter=math.font.family,value=STIX Two Math]
+\begin[mode=display]{math}
+	\table[columnalign=right left]{
+		f(x) &amp;= a\prime  + b\dprime + c\trprime \\
+		f\prime(x) &amp;= x^2 + 1
+	}
+\end{math}
+
+\set[parameter=math.font.family,value=Libertinus Math]
+\begin[mode=display]{math}
+	\table[columnalign=right left]{
+		f(x) &amp;= a\prime  + b\dprime + c\trprime \\
+		f\prime(x) &amp;= x^2 + 1
+	}
+\end{math}
+
+Prose poses problems:
+\medskip
+
+\begin{raggedright}
+	60*10&#x27;16&quot;N 24*55&#x27;52&quot;E (plain)\break
+	60°10′16″N 24°55′52″E (unicode)\break
+	60°10′16″N 24°55′52″E (idiomatic)
+\end{raggedright}
+
+\end{document}
+</pre>
+
+    <h4 class="title is-4">Render command</h4>
+    <code>sile  -o prime-symbol-sile.pdf prime-symbol-sile.sil</code>
+  </div>
+</div>
+
+
+
+
+<a id="xelatex" /></a>
+
+<h3 class="title is-3">xelatex</h3>
+
+<div class="columns">
+  <div class="card column is-one-third">
+    <div class="card-image">
+      <img src="/prime-symbol-xelatex.avif" />
+    </div>
+  </div>
+  <div class="column">
+
+    <p>
+      Download:
+      ( <a download href="/prime-symbol-xelatex.tex">source</a>
+      | <a download href="/prime-symbol-xelatex.pdf">pdf</a>
+      )
+    </p>
+
+    <h4 class="title is-4">Input document</h4>
+    
+    <pre>\documentclass{article}
+\usepackage[paperheight=105mm,paperwidth=74mm,margin=4mm]{geometry}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\usepackage{libertinus}
+\usepackage{fontspec}
+\usepackage{relsize}
+\usepackage{unicode-math}
+\usepackage{siunitx}
+\begin{document}
+\fontsize{12}{16}
+\selectfont
+
+Math mode manners:
+\setmathfont{STIX Two Math}
+\[\mathlarger{\begin{aligned}
+	f(x) &amp; = a\prime + b\dprime + c\trprime \\
+	f\prime(x) &amp; = x^{2} + 1
+\end{aligned}}\]
+
+\setmathfont{Libertinus Math}
+\[\mathlarger{\begin{aligned}
+	f(x) &amp; = a\prime + b\dprime + c\trprime \\
+	f\prime(x) &amp; = x^{2} + 1
+\end{aligned}}\]
+
+Prose poses problems:
+\smallskip
+
+\raggedright{
+	60*10&#x27;16&quot;N 24*55&#x27;52&quot;E (plain)\break
+	60°10′16″N 24°55′52″E (unicode)\break
+	\ang{60;10;16}N \ang{24;55;52}E (idiomatic)
+}
+
+\end{document}
+</pre>
+
+    <h4 class="title is-4">Render command</h4>
+    <code>xelatex  -interaction=batchmode -halt-on-error -jobname data&#x2F;prime-symbol-xelatex prime-symbol-xelatex.tex</code>
+  </div>
+</div>
+
+
+
+
+<a id="groff" /></a>
+
+<h3 class="title is-3">groff</h3>
+
+<div class="columns">
+  <div class="card column is-one-third">
+    <div class="card-image">
+      <img src="/prime-symbol-groff.avif" />
+    </div>
+  </div>
+  <div class="column">
+
+    <p>
+      Download:
+      ( <a download href="/prime-symbol-groff.ms">source</a>
+      | <a download href="/prime-symbol-groff.pdf">pdf</a>
+      )
+    </p>
+
+    <h4 class="title is-4">Input document</h4>
+    
+    <pre>.nr HM .4cm
+.nr PO .4cm
+.nr LL 6.2cm
+.nr PI 0
+.nr PS 12p
+.nr VS 18p
+\# TODO convert OpenType fonts to something groff can use
+.fam P
+.LP
+Math mode manners:
+.LG
+.LG
+.EQ C
+f(x) mark = a&#x27; + b&#x27;&#x27; + c&#x27;&#x27;&#x27;
+.EN
+.LG
+.LG
+.EQ C
+f&#x27;(x) lineup = x sup 2 + 1
+.EN
+\# TODO complete prime input test with two fonts
+.LP
+Prose poses problems:
+.LP
+60*10&#x27;16&quot;N 24*55&#x27;52&quot;E (plain)
+.br
+60°10′16″N 24°55′52″E (unicode)
+.br
+60\[de]10\[fm]16\[sd]N 24\[de]55\[fm]52\[sd]E (idiomatic)
+</pre>
+
+    <h4 class="title is-4">Render command</h4>
+    <code>groff -ms -e -P-pA7 -T pdf prime-symbol-groff.ms &gt; prime-symbol-groff.pdf</code>
+  </div>
+</div>
+
+
+
+
+      </div>
+    </section>
+  </body>
+</html>

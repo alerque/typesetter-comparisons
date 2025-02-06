@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Polytype – Page Geometry 101</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+    
+  </head>
+  <body>
+    <!--
+    <pre>{
+  "config": {
+    "base_url": "/",
+    "mode": "build",
+    "title": "Polytype",
+    "description": "a Rosetta stone for typesetting engines",
+    "languages": {},
+    "default_language": "en",
+    "generate_feed": true,
+    "generate_feeds": true,
+    "feed_filenames": [
+      "feed.xml"
+    ],
+    "taxonomies": [],
+    "author": null,
+    "build_search_index": false,
+    "extra": {},
+    "markdown": {
+      "highlight_code": true,
+      "highlight_theme": "base16-ocean-dark",
+      "highlight_themes_css": [],
+      "render_emoji": false,
+      "external_links_target_blank": false,
+      "external_links_no_follow": false,
+      "external_links_no_referrer": false,
+      "smart_punctuation": false,
+      "bottom_footnotes": false,
+      "extra_syntaxes_and_themes": [],
+      "lazy_async_image": false
+    },
+    "search": {
+      "index_format": "elasticlunr_javascript"
+    },
+    "generate_sitemap": true,
+    "generate_robots_txt": true
+  },
+  "current_path": "/page-geometry/",
+  "current_url": "/page-geometry/",
+  "lang": "en",
+  "page": {
+    "relative_path": "page-geometry.md",
+    "colocated_path": null,
+    "content": "<p>An A7 page with 1cm margins and 1cm paragraph indentation.</p>\n",
+    "permalink": "/page-geometry/",
+    "slug": "page-geometry",
+    "ancestors": [
+      "_index.md"
+    ],
+    "title": "Page Geometry 101",
+    "description": "Pick a paper and some margins",
+    "updated": null,
+    "date": null,
+    "year": null,
+    "month": null,
+    "day": null,
+    "taxonomies": {},
+    "authors": [],
+    "extra": {
+      "typesetters": [
+        "sile",
+        "typst",
+        "xelatex",
+        "groff",
+        "pagedjs"
+      ],
+      "typesetter_args": {
+        "groff": "-P-pA7"
+      }
+    },
+    "path": "/page-geometry/",
+    "components": [
+      "page-geometry"
+    ],
+    "summary": null,
+    "toc": [],
+    "word_count": 10,
+    "reading_time": 1,
+    "assets": [],
+    "draft": false,
+    "lang": "en",
+    "lower": null,
+    "higher": null,
+    "translations": [],
+    "backlinks": []
+  }
+}</pre>
+    -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <h1 class="title is-1 navbar-brand"><a href="&#x2F;">Polytype</a></h1>
+    </nav>
+    <section class="section columns">
+      <aside class="menu column is-narrow">
+        
+
+
+<aside class="menu">
+  <p class="menu-label">
+    Sample Gallery
+  </p>
+  <ul class="menu-list">
+    
+    
+    <li class="is-active">
+      <a href="/page-geometry">Page Geometry 101</a>
+    </li>
+    
+    <li>
+      <a href="/prime-symbol">The Prime Symbol</a>
+    </li>
+    
+    <li>
+      <a href="/dropcaps">Dropcaps</a>
+    </li>
+    
+    <li>
+      <a href="/integral-alignment">Alignment of Integrals</a>
+    </li>
+    
+    <li>
+      <a href="/hieroglyphs">Hieroglyphs</a>
+    </li>
+    
+    <li>
+      <a href="/hello-world">Hello World!</a>
+    </li>
+    
+    <li>
+      <a href="/varlimits">Variant limits</a>
+    </li>
+    
+  </ul>
+  <p class="menu-label">
+    About
+  </p>
+  <ul class="menu-list">
+    <li>
+      <a href="/">Project Goals</a>
+    </li>
+    <li>
+      <a href="https://github.com/alerque/polytype">Sources on GitHub</a>
+    </li>
+  </ul>
+  <p class="menu-label">
+    Typesetting Engines
+  </p>
+  <ul class="menu-list">
+    <li>
+      <a href="https://sile-typesetter.org">SILE</a>
+    </li>
+    <li>
+      <a href="https://typst.app">Typst</a>
+    </li>
+    <li>
+      <a href="https://www.latex-project.org">LaTeX</a>
+    </li>
+    <li>
+      <a href="https://pagedjs.org">paged.js</a>
+    </li>
+    <li>
+      <a href="https://weasyprint.org">WeasyPrint</a>
+    </li>
+    <li>
+      <a href="https://www.speedata.de">Speedata</a>
+    </li>
+    <li>
+      <a href="https://www.gnu.org/software/groff/groff.html">groff</a>
+    </li>
+    <li>
+      <a href="https://patoline.github.io/">Patoline</a>
+    </li>
+    <li>
+      <a href="https://github.com/gfngfn/SATySFi">SATySFi</a>
+    </li>
+  </ul>
+</aside>
+
+      </aside>
+      <div class="container column">
+        
+
+<h2 class="title is-2">Page Geometry 101</h2>
+
+<p>An A7 page with 1cm margins and 1cm paragraph indentation.</p>
+
+
+
+
+
+<a id="sile" /></a>
+
+<h3 class="title is-3">sile</h3>
+
+<div class="columns">
+  <div class="card column is-one-third">
+    <div class="card-image">
+      <img src="/page-geometry-sile.avif" />
+    </div>
+  </div>
+  <div class="column">
+
+    <p>
+      Download:
+      ( <a download href="/page-geometry-sile.sil">source</a>
+      | <a download href="/page-geometry-sile.pdf">pdf</a>
+      )
+    </p>
+
+    <h4 class="title is-4">Input document</h4>
+    
+    <pre>\begin[papersize=a7]{document}
+\nofolios
+\begin[first-content-frame=content]{pagetemplate}
+\frame[id=content,left=1cm,right=right(page)-1cm,top=1cm,bottom=bottom(page)-1cm]
+\end{pagetemplate}
+\set[parameter=document.parindent,value=1cm]
+An A7 page with 1cm margins and 1cm paragraph indentation.
+\end{document}
+</pre>
+
+    <h4 class="title is-4">Render command</h4>
+    <code>sile  -o page-geometry-sile.pdf page-geometry-sile.sil</code>
+  </div>
+</div>
+
+
+
+
+<a id="typst" /></a>
+
+<h3 class="title is-3">typst</h3>
+
+<div class="columns">
+  <div class="card column is-one-third">
+    <div class="card-image">
+      <img src="/page-geometry-typst.avif" />
+    </div>
+  </div>
+  <div class="column">
+
+    <p>
+      Download:
+      ( <a download href="/page-geometry-typst.typ">source</a>
+      | <a download href="/page-geometry-typst.pdf">pdf</a>
+      )
+    </p>
+
+    <h4 class="title is-4">Input document</h4>
+    
+    <pre>#set page(
+  paper: &quot;a7&quot;,
+  margin: 1cm,
+)
+#set par(
+  first-line-indent: 1cm,
+  justify: true,
+)
+&#x2F;&#x2F; Note the manual glue node here is a hack around first
+&#x2F;&#x2F; paragraph in block not respecting first-line-indent:
+&#x2F;&#x2F; https:&#x2F;&#x2F;github.com&#x2F;typst&#x2F;typst&#x2F;issues&#x2F;311
+#h(1cm)An A7 page with 1cm margins and 1cm paragraph indentation.
+</pre>
+
+    <h4 class="title is-4">Render command</h4>
+    <code>typst  compile page-geometry-typst.typ page-geometry-typst.pdf</code>
+  </div>
+</div>
+
+
+
+
+<a id="xelatex" /></a>
+
+<h3 class="title is-3">xelatex</h3>
+
+<div class="columns">
+  <div class="card column is-one-third">
+    <div class="card-image">
+      <img src="/page-geometry-xelatex.avif" />
+    </div>
+  </div>
+  <div class="column">
+
+    <p>
+      Download:
+      ( <a download href="/page-geometry-xelatex.tex">source</a>
+      | <a download href="/page-geometry-xelatex.pdf">pdf</a>
+      )
+    </p>
+
+    <h4 class="title is-4">Input document</h4>
+    
+    <pre>\documentclass{article}
+\usepackage[paperheight=105mm,paperwidth=74mm,margin=1cm]{geometry}
+\pagenumbering{gobble}
+\usepackage{indentfirst}
+\setlength{\parindent}{1cm}
+\begin{document}
+An A7 page with 1cm margins and 1cm paragraph indentation.
+\end{document}
+</pre>
+
+    <h4 class="title is-4">Render command</h4>
+    <code>xelatex  -interaction=batchmode -halt-on-error -jobname data&#x2F;page-geometry-xelatex page-geometry-xelatex.tex</code>
+  </div>
+</div>
+
+
+
+
+<a id="groff" /></a>
+
+<h3 class="title is-3">groff</h3>
+
+<div class="columns">
+  <div class="card column is-one-third">
+    <div class="card-image">
+      <img src="/page-geometry-groff.avif" />
+    </div>
+  </div>
+  <div class="column">
+
+    <p>
+      Download:
+      ( <a download href="/page-geometry-groff.ms">source</a>
+      | <a download href="/page-geometry-groff.pdf">pdf</a>
+      )
+    </p>
+
+    <h4 class="title is-4">Input document</h4>
+    
+    <pre>.nr HM 1cm
+.nr PO 1cm
+.nr LL 5.4cm
+.nr PI 1cm
+.PP
+An A7 page with 1cm margins and 1cm paragraph indentation.
+</pre>
+
+    <h4 class="title is-4">Render command</h4>
+    <code>groff -ms -P-pA7 -T pdf page-geometry-groff.ms &gt; page-geometry-groff.pdf</code>
+  </div>
+</div>
+
+
+
+
+<a id="pagedjs" /></a>
+
+<h3 class="title is-3">pagedjs</h3>
+
+<div class="columns">
+  <div class="card column is-one-third">
+    <div class="card-image">
+      <img src="/page-geometry-pagedjs.avif" />
+    </div>
+  </div>
+  <div class="column">
+
+    <p>
+      Download:
+      ( <a download href="/page-geometry-pagedjs.html">source</a>
+      | <a download href="/page-geometry-pagedjs.pdf">pdf</a>
+      )
+    </p>
+
+    <h4 class="title is-4">Input document</h4>
+    
+    <pre>&lt;html&gt;
+	&lt;head&gt;
+		&lt;style&gt;
+		@page {
+			size: A7;
+			&#x2F;* Work around a bug in paged.js, if bleed is not specified the
+			   paper size doesn&#x27;t fully take effect:
+			   https:&#x2F;&#x2F;gitlab.coko.foundation&#x2F;pagedjs&#x2F;pagedjs&#x2F;-&#x2F;issues&#x2F;450 *&#x2F;
+			bleed: 0;
+			margin: 1cm;
+		}
+		p {
+			text-indent: 1cm;
+			text-align: justify;
+		}
+		&lt;&#x2F;style&gt;
+	&lt;&#x2F;head&gt;
+	&lt;p&gt;
+		An A7 page with 1cm margins and 1cm paragraph indentation.
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;html&gt;
+</pre>
+
+    <h4 class="title is-4">Render command</h4>
+    <code>pagedjs-cli   -i page-geometry-pagedjs.html -o page-geometry-pagedjs.pdf</code>
+  </div>
+</div>
+
+
+
+
+      </div>
+    </section>
+  </body>
+</html>

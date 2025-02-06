@@ -1,0 +1,32 @@
+.PRINTSTYLE TYPESET
+.PAGEWIDTH 297.675p
+.PAGELENGTH 419.58p
+.L_MARGIN 40p
+.R_MARGIN 40p
+.T_MARGIN 40p
+.DROPCAP T 2
+his paragraph has a pretty plain initial or drop cap.
+It uses the default document font.
+You didn't really expect more detail with such a generic font choice, right?
+This may be exactly what you want, especially with modern typesetting styles which tend towards the minimalist.
+
+.DROPCAP \*[FWD -.58m]``N 2
+.SMALLCAPS
+ever say never\c
+.SMALLCAPS OFF
+,'' the saying goes.
+Someday your dropcap may include leading punctuation
+.FT I
+and
+.FT R
+a hanging indent.
+No worries.
+All you have to do is guess and fudge.
+
+.DROPCAP_GUTTER 1m
+.DROPCAP A 3
+\*[FWD -1m]nother paragraph shows off a different line count.
+Also it uses a stand-off effect in lines following the opening.
+This helps highlight the fact that the initial letter belongs to the first word.
+The first line of text will be flush against the drop cap.
+Each additional line spanned with be indented with an extra space.

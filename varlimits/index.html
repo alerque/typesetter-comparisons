@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Polytype – Variant limits</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+    
+  </head>
+  <body>
+    <!--
+    <pre>{
+  "config": {
+    "base_url": "/",
+    "mode": "build",
+    "title": "Polytype",
+    "description": "a Rosetta stone for typesetting engines",
+    "languages": {},
+    "default_language": "en",
+    "generate_feed": true,
+    "generate_feeds": true,
+    "feed_filenames": [
+      "feed.xml"
+    ],
+    "taxonomies": [],
+    "author": null,
+    "build_search_index": false,
+    "extra": {},
+    "markdown": {
+      "highlight_code": true,
+      "highlight_theme": "base16-ocean-dark",
+      "highlight_themes_css": [],
+      "render_emoji": false,
+      "external_links_target_blank": false,
+      "external_links_no_follow": false,
+      "external_links_no_referrer": false,
+      "smart_punctuation": false,
+      "bottom_footnotes": false,
+      "extra_syntaxes_and_themes": [],
+      "lazy_async_image": false
+    },
+    "search": {
+      "index_format": "elasticlunr_javascript"
+    },
+    "generate_sitemap": true,
+    "generate_robots_txt": true
+  },
+  "current_path": "/varlimits/",
+  "current_url": "/varlimits/",
+  "lang": "en",
+  "page": {
+    "relative_path": "varlimits.md",
+    "colocated_path": null,
+    "content": "<p>Variants for superior, inferior, projective, and injective limits are an interesting challenge for typesetting engines with mathematical capabilities.</p>\n<p>They have both a subscript expression and a stretchy symbol (an arrow or a bar) that indicates the direction and nature of the limit.</p>\n<p>The symbol is stacked below or above the limit.</p>\n<p>In display mode, the expression is below the limit.</p>\n<p>In inline mode, the expression is on the right of the limit, but the symbol remains above or below the limit.\nSo the symbol is not <em>moveable,</em> while the expression is, depending on the context.</p>\n",
+    "permalink": "/varlimits/",
+    "slug": "varlimits",
+    "ancestors": [
+      "_index.md"
+    ],
+    "title": "Variant limits",
+    "description": "Those limits with a little extra flair",
+    "updated": null,
+    "date": null,
+    "year": null,
+    "month": null,
+    "day": null,
+    "taxonomies": {},
+    "authors": [],
+    "extra": {
+      "typesetters": [
+        "sile",
+        "xelatex"
+      ]
+    },
+    "path": "/varlimits/",
+    "components": [
+      "varlimits"
+    ],
+    "summary": null,
+    "toc": [],
+    "word_count": 95,
+    "reading_time": 1,
+    "assets": [],
+    "draft": false,
+    "lang": "en",
+    "lower": null,
+    "higher": null,
+    "translations": [],
+    "backlinks": []
+  }
+}</pre>
+    -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <h1 class="title is-1 navbar-brand"><a href="&#x2F;">Polytype</a></h1>
+    </nav>
+    <section class="section columns">
+      <aside class="menu column is-narrow">
+        
+
+
+<aside class="menu">
+  <p class="menu-label">
+    Sample Gallery
+  </p>
+  <ul class="menu-list">
+    
+    
+    <li>
+      <a href="/page-geometry">Page Geometry 101</a>
+    </li>
+    
+    <li>
+      <a href="/prime-symbol">The Prime Symbol</a>
+    </li>
+    
+    <li>
+      <a href="/dropcaps">Dropcaps</a>
+    </li>
+    
+    <li>
+      <a href="/integral-alignment">Alignment of Integrals</a>
+    </li>
+    
+    <li>
+      <a href="/hieroglyphs">Hieroglyphs</a>
+    </li>
+    
+    <li>
+      <a href="/hello-world">Hello World!</a>
+    </li>
+    
+    <li class="is-active">
+      <a href="/varlimits">Variant limits</a>
+    </li>
+    
+  </ul>
+  <p class="menu-label">
+    About
+  </p>
+  <ul class="menu-list">
+    <li>
+      <a href="/">Project Goals</a>
+    </li>
+    <li>
+      <a href="https://github.com/alerque/polytype">Sources on GitHub</a>
+    </li>
+  </ul>
+  <p class="menu-label">
+    Typesetting Engines
+  </p>
+  <ul class="menu-list">
+    <li>
+      <a href="https://sile-typesetter.org">SILE</a>
+    </li>
+    <li>
+      <a href="https://typst.app">Typst</a>
+    </li>
+    <li>
+      <a href="https://www.latex-project.org">LaTeX</a>
+    </li>
+    <li>
+      <a href="https://pagedjs.org">paged.js</a>
+    </li>
+    <li>
+      <a href="https://weasyprint.org">WeasyPrint</a>
+    </li>
+    <li>
+      <a href="https://www.speedata.de">Speedata</a>
+    </li>
+    <li>
+      <a href="https://www.gnu.org/software/groff/groff.html">groff</a>
+    </li>
+    <li>
+      <a href="https://patoline.github.io/">Patoline</a>
+    </li>
+    <li>
+      <a href="https://github.com/gfngfn/SATySFi">SATySFi</a>
+    </li>
+  </ul>
+</aside>
+
+      </aside>
+      <div class="container column">
+        
+
+<h2 class="title is-2">Variant limits</h2>
+
+<p>Variants for superior, inferior, projective, and injective limits are an interesting challenge for typesetting engines with mathematical capabilities.</p>
+<p>They have both a subscript expression and a stretchy symbol (an arrow or a bar) that indicates the direction and nature of the limit.</p>
+<p>The symbol is stacked below or above the limit.</p>
+<p>In display mode, the expression is below the limit.</p>
+<p>In inline mode, the expression is on the right of the limit, but the symbol remains above or below the limit.
+So the symbol is not <em>moveable,</em> while the expression is, depending on the context.</p>
+
+
+
+
+
+<a id="sile" /></a>
+
+<h3 class="title is-3">sile</h3>
+
+<div class="columns">
+  <div class="card column is-one-third">
+    <div class="card-image">
+      <img src="/varlimits-sile.avif" />
+    </div>
+  </div>
+  <div class="column">
+
+    <p>
+      Download:
+      ( <a download href="/varlimits-sile.sil">source</a>
+      | <a download href="/varlimits-sile.pdf">pdf</a>
+      )
+    </p>
+
+    <h4 class="title is-4">Input document</h4>
+    
+    <pre>\begin[papersize=a7]{document}
+\nofolios
+\neverindent
+\use[module=packages.math]
+\font[size=12pt]
+\set[parameter=math.font.family,value=Libertinus Math]
+\set[parameter=math.font.size,value=12]
+
+\begin[mode=display]{math}
+  \projlim_{i \in I} A_i = \varprojlim_{i \in I} A_i
+\end{math}
+
+Inline: \math{\projlim_{i \in I} A_i = \varprojlim_{i \in I} A_i}
+
+\begin[mode=display]{math}
+  \injlim_{i \in I} A_i = \varinjlim_{i \in I} A_i
+\end{math}
+
+Inline: \math{\injlim_{i \in I} A_i = \varinjlim_{i \in I} A_i}
+
+\begin[mode=display]{math}
+  \limsup_{n \to \infty} a_n = \varlimsup_{n \to \infty} a_n
+\end{math}
+
+Inline: \math{\limsup_{n \to \infty} a_n = \varlimsup_{n \to \infty} a_n}
+
+\begin[mode=display]{math}
+  \liminf_{n \to \infty} a_n = \varliminf_{n \to \infty} a_n
+\end{math}
+
+Inline: \math{\liminf_{n \to \infty} a_n = \varliminf_{n \to \infty} a_n}
+
+\end{document}
+</pre>
+
+    <h4 class="title is-4">Render command</h4>
+    <code>sile  -o varlimits-sile.pdf varlimits-sile.sil</code>
+  </div>
+</div>
+
+
+
+
+<a id="xelatex" /></a>
+
+<h3 class="title is-3">xelatex</h3>
+
+<div class="columns">
+  <div class="card column is-one-third">
+    <div class="card-image">
+      <img src="/varlimits-xelatex.avif" />
+    </div>
+  </div>
+  <div class="column">
+
+    <p>
+      Download:
+      ( <a download href="/varlimits-xelatex.tex">source</a>
+      | <a download href="/varlimits-xelatex.pdf">pdf</a>
+      )
+    </p>
+
+    <h4 class="title is-4">Input document</h4>
+    
+    <pre>\documentclass[12pt]{article}
+\usepackage[paperheight=105mm,paperwidth=74mm,margin=4mm]{geometry}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\usepackage{libertinus}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\begin{document}
+
+$$
+  \projlim_{i \in I} A_i = \varprojlim_{i \in I} A_i
+$$
+
+Inline: $\projlim_{i \in I} A_i = \varprojlim_{i \in I} A_i$
+
+
+$$
+  \injlim_{i \in I} A_i = \varinjlim_{i \in I} A_i
+$$
+
+Inline: $\injlim_{i \in I} A_i = \varinjlim_{i \in I} A_i$
+
+$$
+  \limsup_{n \to \infty} a_n = \varlimsup_{n \to \infty} a_n
+$$
+
+Inline: $\limsup_{n \to \infty} a_n = \varlimsup_{n \to \infty} a_n$
+
+$$
+  \liminf_{n \to \infty} a_n = \varliminf_{n \to \infty} a_n
+$$
+
+Inline: $\liminf_{n \to \infty} a_n = \varliminf_{n \to \infty} a_n$
+
+\end{document}
+</pre>
+
+    <h4 class="title is-4">Render command</h4>
+    <code>xelatex  -interaction=batchmode -halt-on-error -jobname data&#x2F;varlimits-xelatex varlimits-xelatex.tex</code>
+  </div>
+</div>
+
+
+
+
+      </div>
+    </section>
+  </body>
+</html>

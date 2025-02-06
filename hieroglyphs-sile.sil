@@ -1,0 +1,33 @@
+\begin[papersize=a6]{document}
+\use[module=packages.rules]
+\nofolios
+\neverindent
+\set[parameter="document.parskip",value="1bs"]
+\font[family=Libertinus Serif,size=16pt]
+\begin{lua}
+
+local package = pl.class(SILE.packages.base)
+package._name = "hieroglyphics"
+
+function package:registerCommands ()
+   self:registerCommand("egyp-sample", function (_, content)
+      SILE.call("font", { language = "und", style = "Italic" }, { content[1] })
+      SILE.call("font", { language = "en" }, { " ‘" .. content[2] .. "’" })
+      SILE.call("skip", { height = "-4ex" })
+      SILE.call("hrule", { height = "1pt", width = "100%lw" })
+      SILE.call("skip", { height = "1ex" })
+      SILE.call("font", { family = "Egyptian Text", language = "egyp", size = "3ex" }, { content[3] })
+   end)
+end
+
+return package
+
+\end{lua}
+\begin{raggedright}
+\egyp-sample{{mdw.t-km.t}{Egyptian language}{𓌃𓂧𓐰𓏏𓐱𓏯𓀁𓏪𓆎𓅓𓊖}}
+
+\egyp-sample{{nfr}{fine, beautiful}{𓄤𓆑𓐰𓂋}}
+
+\egyp-sample{{ḫprj}{Khepri}{𓆣𓐰𓂋𓇋𓁛}}
+\end{raggedright}
+\end{document}

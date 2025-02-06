@@ -1,0 +1,8 @@
+\begin[papersize=a7]{document}
+\nofolios
+\begin[first-content-frame=content]{pagetemplate}
+\frame[id=content,left=1cm,right=right(page)-1cm,top=1cm,bottom=bottom(page)-1cm]
+\end{pagetemplate}
+\set[parameter=document.parindent,value=1cm]
+An A7 page with 1cm margins and 1cm paragraph indentation.
+\end{document}

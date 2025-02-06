@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<style>
+		@page {
+			size: A7;
+			/* Work around a bug in paged.js, if bleed is not specified the
+			   paper size doesn't fully take effect:
+			   https://gitlab.coko.foundation/pagedjs/pagedjs/-/issues/450 */
+			bleed: 0;
+			margin: 1cm;
+		}
+		p {
+			text-indent: 1cm;
+			text-align: justify;
+		}
+		</style>
+	</head>
+	<p>
+		An A7 page with 1cm margins and 1cm paragraph indentation.
+	</p>
+</html>

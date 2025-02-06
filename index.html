@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Polytype – Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+    
+  </head>
+  <body>
+    <!--
+    <pre>{
+  "config": {
+    "base_url": "/",
+    "mode": "build",
+    "title": "Polytype",
+    "description": "a Rosetta stone for typesetting engines",
+    "languages": {},
+    "default_language": "en",
+    "generate_feed": true,
+    "generate_feeds": true,
+    "feed_filenames": [
+      "feed.xml"
+    ],
+    "taxonomies": [],
+    "author": null,
+    "build_search_index": false,
+    "extra": {},
+    "markdown": {
+      "highlight_code": true,
+      "highlight_theme": "base16-ocean-dark",
+      "highlight_themes_css": [],
+      "render_emoji": false,
+      "external_links_target_blank": false,
+      "external_links_no_follow": false,
+      "external_links_no_referrer": false,
+      "smart_punctuation": false,
+      "bottom_footnotes": false,
+      "extra_syntaxes_and_themes": [],
+      "lazy_async_image": false
+    },
+    "search": {
+      "index_format": "elasticlunr_javascript"
+    },
+    "generate_sitemap": true,
+    "generate_robots_txt": true
+  },
+  "current_path": "/",
+  "current_url": "/",
+  "lang": "en",
+  "section": {
+    "relative_path": "_index.md",
+    "colocated_path": null,
+    "content": "",
+    "permalink": "/",
+    "draft": false,
+    "ancestors": [],
+    "title": null,
+    "description": null,
+    "extra": {},
+    "path": "/",
+    "components": [],
+    "toc": [],
+    "word_count": 0,
+    "reading_time": 0,
+    "lang": "en",
+    "assets": [],
+    "pages": [
+      {
+        "relative_path": "page-geometry.md",
+        "colocated_path": null,
+        "content": "<p>An A7 page with 1cm margins and 1cm paragraph indentation.</p>\n",
+        "permalink": "/page-geometry/",
+        "slug": "page-geometry",
+        "ancestors": [
+          "_index.md"
+        ],
+        "title": "Page Geometry 101",
+        "description": "Pick a paper and some margins",
+        "updated": null,
+        "date": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "taxonomies": {},
+        "authors": [],
+        "extra": {
+          "typesetters": [
+            "sile",
+            "typst",
+            "xelatex",
+            "groff",
+            "pagedjs"
+          ],
+          "typesetter_args": {
+            "groff": "-P-pA7"
+          }
+        },
+        "path": "/page-geometry/",
+        "components": [
+          "page-geometry"
+        ],
+        "summary": null,
+        "toc": [],
+        "word_count": 10,
+        "reading_time": 1,
+        "assets": [],
+        "draft": false,
+        "lang": "en",
+        "lower": null,
+        "higher": null,
+        "translations": [],
+        "backlinks": []
+      },
+      {
+        "relative_path": "prime-symbol.md",
+        "colocated_path": null,
+        "content": "<p>Assorted ways of entering and rendering the troublesome prime symbol.</p>\n<p>One issue is in math mode.\nA typesetter has to account for how different fonts position their prime symbols.</p>\n<p>Another problem crops up in text where quotes marks get used for things like feet and inch units in lengths or minute and second units in latitude and longitude coordinates.\nIt should be possible to <em>not</em> trigger smart quotes in these cases.</p>\n",
+        "permalink": "/prime-symbol/",
+        "slug": "prime-symbol",
+        "ancestors": [
+          "_index.md"
+        ],
+        "title": "The Prime Symbol",
+        "description": "In math mode, prime-time is always a good time.",
+        "updated": null,
+        "date": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "taxonomies": {},
+        "authors": [],
+        "extra": {
+          "typesetters": [
+            "typst",
+            "sile",
+            "xelatex",
+            "groff"
+          ],
+          "typesetter_args": {
+            "groff": "-e -P-pA7"
+          }
+        },
+        "path": "/prime-symbol/",
+        "components": [
+          "prime-symbol"
+        ],
+        "summary": null,
+        "toc": [],
+        "word_count": 71,
+        "reading_time": 1,
+        "assets": [],
+        "draft": false,
+        "lang": "en",
+        "lower": null,
+        "higher": null,
+        "translations": [],
+        "backlinks": []
+      },
+      {
+        "relative_path": "dropcaps.md",
+        "colocated_path": null,
+        "content": "<p>Once upon a time in a far away land all chapters began with these.</p>\n",
+        "permalink": "/dropcaps/",
+        "slug": "dropcaps",
+        "ancestors": [
+          "_index.md"
+        ],
+        "title": "Dropcaps",
+        "description": "For that bold leading character",
+        "updated": null,
+        "date": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "taxonomies": {},
+        "authors": [],
+        "extra": {
+          "typesetters": [
+            "sile",
+            "typst",
+            "xelatex",
+            "groff"
+          ]
+        },
+        "path": "/dropcaps/",
+        "components": [
+          "dropcaps"
+        ],
+        "summary": null,
+        "toc": [],
+        "word_count": 14,
+        "reading_time": 1,
+        "assets": [],
+        "draft": false,
+        "lang": "en",
+        "lower": null,
+        "higher": null,
+        "translations": [],
+        "backlinks": []
+      },
+      {
+        "relative_path": "integral-alignment.md",
+        "colocated_path": null,
+        "content": "<p>Compare the baseline alignment of integrals.</p>\n<p>aka. What's up must come down.</p>\n",
+        "permalink": "/integral-alignment/",
+        "slug": "integral-alignment",
+        "ancestors": [
+          "_index.md"
+        ],
+        "title": "Alignment of Integrals",
+        "description": "Compare the baseline alignment of integrals.",
+        "updated": null,
+        "date": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "taxonomies": {},
+        "authors": [],
+        "extra": {
+          "typesetters": [
+            "typst",
+            "sile",
+            "xelatex"
+          ]
+        },
+        "path": "/integral-alignment/",
+        "components": [
+          "integral-alignment"
+        ],
+        "summary": null,
+        "toc": [],
+        "word_count": 12,
+        "reading_time": 1,
+        "assets": [],
+        "draft": false,
+        "lang": "en",
+        "lower": null,
+        "higher": null,
+        "translations": [],
+        "backlinks": []
+      },
+      {
+        "relative_path": "hieroglyphs.md",
+        "colocated_path": null,
+        "content": "<p>In ancient times pictographs –wielded in the hands of the Pharaohs– ruled the world .</p>\n",
+        "permalink": "/hieroglyphs/",
+        "slug": "hieroglyphs",
+        "ancestors": [
+          "_index.md"
+        ],
+        "title": "Hieroglyphs",
+        "description": "Language of the Pharaohs",
+        "updated": null,
+        "date": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "taxonomies": {},
+        "authors": [],
+        "extra": {
+          "typesetters": [
+            "sile",
+            "typst"
+          ]
+        },
+        "path": "/hieroglyphs/",
+        "components": [
+          "hieroglyphs"
+        ],
+        "summary": null,
+        "toc": [],
+        "word_count": 14,
+        "reading_time": 1,
+        "assets": [],
+        "draft": false,
+        "lang": "en",
+        "lower": null,
+        "higher": null,
+        "translations": [],
+        "backlinks": []
+      },
+      {
+        "relative_path": "hello-world.md",
+        "colocated_path": null,
+        "content": "<p>Just the simplest way to get a phrase onto a numbered page.</p>\n<p>The page size, font face, margins, and everything else should be the defaults.\nThe only non-default addition to the minimal way to get text on a page is adding a folio in the simplest way possible.\nThe position of the folio may vary depending on defaults, but if an explicit position is required use bottom center.</p>\n",
+        "permalink": "/hello-world/",
+        "slug": "hello-world",
+        "ancestors": [
+          "_index.md"
+        ],
+        "title": "Hello World!",
+        "description": "Your most basic greeting.",
+        "updated": null,
+        "date": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "taxonomies": {},
+        "authors": [],
+        "extra": {
+          "typesetters": [
+            "sile",
+            "typst",
+            "xelatex",
+            "groff",
+            "satysfi",
+            "pagedjs",
+            "weasyprint"
+          ]
+        },
+        "path": "/hello-world/",
+        "components": [
+          "hello-world"
+        ],
+        "summary": null,
+        "toc": [],
+        "word_count": 69,
+        "reading_time": 1,
+        "assets": [],
+        "draft": false,
+        "lang": "en",
+        "lower": null,
+        "higher": null,
+        "translations": [],
+        "backlinks": []
+      },
+      {
+        "relative_path": "varlimits.md",
+        "colocated_path": null,
+        "content": "<p>Variants for superior, inferior, projective, and injective limits are an interesting challenge for typesetting engines with mathematical capabilities.</p>\n<p>They have both a subscript expression and a stretchy symbol (an arrow or a bar) that indicates the direction and nature of the limit.</p>\n<p>The symbol is stacked below or above the limit.</p>\n<p>In display mode, the expression is below the limit.</p>\n<p>In inline mode, the expression is on the right of the limit, but the symbol remains above or below the limit.\nSo the symbol is not <em>moveable,</em> while the expression is, depending on the context.</p>\n",
+        "permalink": "/varlimits/",
+        "slug": "varlimits",
+        "ancestors": [
+          "_index.md"
+        ],
+        "title": "Variant limits",
+        "description": "Those limits with a little extra flair",
+        "updated": null,
+        "date": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "taxonomies": {},
+        "authors": [],
+        "extra": {
+          "typesetters": [
+            "sile",
+            "xelatex"
+          ]
+        },
+        "path": "/varlimits/",
+        "components": [
+          "varlimits"
+        ],
+        "summary": null,
+        "toc": [],
+        "word_count": 95,
+        "reading_time": 1,
+        "assets": [],
+        "draft": false,
+        "lang": "en",
+        "lower": null,
+        "higher": null,
+        "translations": [],
+        "backlinks": []
+      }
+    ],
+    "subsections": [],
+    "translations": [],
+    "backlinks": [],
+    "generate_feeds": false,
+    "transparent": false
+  }
+}</pre>
+    -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <h1 class="title is-1 navbar-brand"><a href="&#x2F;">Polytype</a></h1>
+    </nav>
+    <section class="section columns">
+      <aside class="menu column is-narrow">
+        
+
+
+<aside class="menu">
+  <p class="menu-label">
+    Sample Gallery
+  </p>
+  <ul class="menu-list">
+    
+    
+    <li>
+      <a href="/page-geometry">Page Geometry 101</a>
+    </li>
+    
+    <li>
+      <a href="/prime-symbol">The Prime Symbol</a>
+    </li>
+    
+    <li>
+      <a href="/dropcaps">Dropcaps</a>
+    </li>
+    
+    <li>
+      <a href="/integral-alignment">Alignment of Integrals</a>
+    </li>
+    
+    <li>
+      <a href="/hieroglyphs">Hieroglyphs</a>
+    </li>
+    
+    <li>
+      <a href="/hello-world">Hello World!</a>
+    </li>
+    
+    <li>
+      <a href="/varlimits">Variant limits</a>
+    </li>
+    
+  </ul>
+  <p class="menu-label">
+    About
+  </p>
+  <ul class="menu-list">
+    <li>
+      <a href="/">Project Goals</a>
+    </li>
+    <li>
+      <a href="https://github.com/alerque/polytype">Sources on GitHub</a>
+    </li>
+  </ul>
+  <p class="menu-label">
+    Typesetting Engines
+  </p>
+  <ul class="menu-list">
+    <li>
+      <a href="https://sile-typesetter.org">SILE</a>
+    </li>
+    <li>
+      <a href="https://typst.app">Typst</a>
+    </li>
+    <li>
+      <a href="https://www.latex-project.org">LaTeX</a>
+    </li>
+    <li>
+      <a href="https://pagedjs.org">paged.js</a>
+    </li>
+    <li>
+      <a href="https://weasyprint.org">WeasyPrint</a>
+    </li>
+    <li>
+      <a href="https://www.speedata.de">Speedata</a>
+    </li>
+    <li>
+      <a href="https://www.gnu.org/software/groff/groff.html">groff</a>
+    </li>
+    <li>
+      <a href="https://patoline.github.io/">Patoline</a>
+    </li>
+    <li>
+      <a href="https://github.com/gfngfn/SATySFi">SATySFi</a>
+    </li>
+  </ul>
+</aside>
+
+      </aside>
+      <div class="container column">
+        
+
+
+
+<h1 id="Polytype"><a href="https://alerque.github.io/polytype">Polytype</a></h1>
+<p>A Rosetta stone for typesetting engines.</p>
+<p>This project's goal is to provide a chrestomathy for typesetting similar to what <a href="https://rosettacode.org/wiki/Rosetta_Code">Rosetta Code</a> does for programming languages.
+The samples here are designed to compare and/or contrast the approaches taken to various typesetting situations by different typesetting engines.</p>
+<p>The emphasis is less on document markup languages, programming languages, or actual content and more on the way layout and orthographic features are achieved.
+Sometimes similar input will produce very different outputs.
+Sometimes similar output is achieved with very different inputs.
+Some engines are more suited to tackling specific problems that others.</p>
+<h2 id="Contributions">Contributions</h2>
+<p>New samples are always welcome, including for any single engine.
+Adding support for current samples in additional engines is also welcome.
+Improvements to the current samples may be considered if they are more idiomatic or useful as examples.
+Alternative samples from the current engines may also be considered if they demonstrate some contrast or similarity with a different engine.</p>
+<p>Contributions may be submitted as as pull requests to the <a href="https://github.com/alerque/polytype">GitHub project</a>.</p>
+<h2 id="Local_development">Local development</h2>
+<p>All input samples are rendered remotely in CI and used to create the static site.
+Contributions may be made just by editing or adding input samples.</p>
+<p>If you do want to test render them locally you can build the site just like it is done in CI.</p>
+<p>The only thing required to build the samples in this repository locally is a working <code>nix</code> installation (not the OS, just the package manager).
+Once you have a working <code>nix</code> executable, building the examples can be done with:</p>
+<pre data-lang="console" style="background-color:#2b303b;color:#c0c5ce;" class="language-console "><code class="language-console" data-lang="console"><span>$ nix-shell --pure --run &#39;make all&#39;
+</span></code></pre>
+<p>To generate the static version of the website and serve it locally for testing, try:</p>
+<pre data-lang="console" style="background-color:#2b303b;color:#c0c5ce;" class="language-console "><code class="language-console" data-lang="console"><span>$ nix-shell --pure --run &#39;make serve&#39;
+</span></code></pre>
+<p>This will print out a localhost address for you to browse to and stay running serving the current version of the site.
+Some resources will automatically update and refresh while the sever is running.
+For the rendered examples running <code>make all</code> in another terminal should update the images and the site will refresh.</p>
+
+
+
+      </div>
+    </section>
+  </body>
+</html>
